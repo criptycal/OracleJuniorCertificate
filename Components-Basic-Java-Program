@@ -1,0 +1,50 @@
+The Basic Anatomy of a Java Program
+
+class definition - Your java programs will always start with a class definition.  Begin with the word "class" followed by the name of the program.  Use curly braces to start and end the classdefinition.  In the example shown here the name of the program would be HelloWorld.
+
+      class HelloWorld { 
+            . . . . 
+        } // end class HelloWorld 
+
+main method - In java there are many different kinds of classes.  A class with a main method is a program.  The main method is where program execution starts and stops.  Even though the main method can ask other classes, objects, methods or parts of the java language to help, the overall execution of your program begins and ends in the main method.  This is the general structure of a main method in java.
+
+      public static void main(String[] args) {
+            . . . . 
+        } // end main method 
+
+variables - A variable is a symbol or name that stands for a value.  When we declare a variable we ask the computer to set aside a place in memory where we can store a particular piece of information.  Whenever you use the name of a variable in your code, the program refers to the value stored there.
+
+Remember that variables in java are typed.  That is, they can only hold one kind of data (int, float, or object reference for example).  When we declare a variable we must define what kind of value will be stored there.  The following snippet of code declares an integer variable named myVar, assigns it a value of 6, and then prints the value on the screen.
+
+            int myVar; 
+            myVar = 6; 
+            System.out.println(myVar); 
+
+java statements - A statement represents an action to be carried out.  Statements in java are like sentences in english.  We terminate statements in java using a semicolon the same way that we end sentences in english using a period.
+
+Some Types of Java Statements :
+
+print statements : for outputting information to the screen or to an output file.  Note that we have not covered file output yet - you do not need to know this right now. 
+        System.out.println("Goodnight");
+        System.out.print("Goodnight");
+        fileOut.println("Goodnight");
+        fileOut.print("Goodnight");
+
+variable declarations : for creating variables (note that all variables except for booleans are empty when when first created).
+        int myInteger; 
+        float myFloat; 
+        String myString; 
+
+assignment statements : for putting values into variables.
+        myInteger = 65 + 6; 
+        myFloat = 4.0f; 
+        myString = "Canada"; 
+
+variable declarations with an assignment : for creating variables and assigning them an initial value.
+        int myInteger = 65 + 6; 
+        float myFloat = 4.0f; 
+        String myString = "Canada"; 
+
+import statements : for accessing special features of java not available in the core part of the language.
+        import java.io.*; 
+        import java.util.*; 
